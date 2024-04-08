@@ -7,6 +7,13 @@ TagManager:
   - Coins
   - MainMenu
   - Out
+  - HealthUI
+  - bullet
+  - WeakPoint
+  - enemy
+  - Spike
+  - Boulder
+  - holder
   layers:
   - Default
   - TransparentFX
@@ -27,7 +34,7 @@ TagManager:
   - 
   - 
   - player
-  - 
+  - bullet
   - 
   - 
   - 

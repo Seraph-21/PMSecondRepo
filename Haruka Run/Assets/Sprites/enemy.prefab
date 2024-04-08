@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3643674115328560402}
   - component: {fileID: 3643674115328560403}
   - component: {fileID: 3643674115328560400}
+  - component: {fileID: 4535655564927593835}
+  - component: {fileID: -771319936486575644}
   m_Layer: 0
   m_Name: enemy
   m_TagString: Untagged
@@ -149,8 +151,36 @@ MonoBehaviour:
   player: {fileID: 0}
   timeToFire: 1
   bulletSpeed: 12
-  bullet: {fileID: 5429704747296599496, guid: c6da16255aa235042bef1a6eaca2a191, type: 3}
+  bullet: {fileID: 376483264738672032, guid: 138a49f7734608945bcc8ebbd4cdfe65, type: 3}
   bulletLifeTime: 4
   shootDistance: 15
   predictiveShoot: 1
   predictiveLead: 0.3
+--- !u!114 &4535655564927593835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3643674115328560401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7f66d98d69b12442be55b863464138b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 0}
+  damage: 2
+--- !u!114 &-771319936486575644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3643674115328560401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f509a64ee15474d9ec4efe4a05a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  currentHealth: 0
