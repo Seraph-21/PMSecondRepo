@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
    }
     public void OnJump(InputValue value)
     {
-        //if (!myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
+       // if (!myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
 
         if(value.isPressed)
         {
@@ -69,6 +69,7 @@ public class PlayerMovement : MonoBehaviour
 
            myRigidbody.velocity += new Vector2 (0f, jumpSpeed);
         }
+        else if(!myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
     }
 
     public void Walk()
